@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>if문 사용해 보기</h1>
+    <input type="text" id="num" />
+    <button type="button" onclick="display()">확인</button>
+    <script>
+        
+    
+
+        function display(){
+            var strN = document.getElementById('num').value;
+            var n= Number(strN);
+            if( n >= 2 && n <=9){
+                for(i=1; i<=9; i++){
+                    var cal = n * i;
+                    document.write(n+'x'+i + '=' + cal+'<br />');
+                }
+            }else{
+                alert('2~9까지의 숫자를 입력해주세요')
+            }
+        }
+    </script>
+</body>
+</html>
