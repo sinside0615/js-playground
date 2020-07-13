@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>사용자가 입력한 수들의 갯수와 합을 구하는 프로그램을 작성해 봅시다 (0이 되면 입력종료)</h1>
+    <script>
+        var sum=0;
+        var cound = -1;
+       for(i=0; i<10; i++){
+           var input=prompt("숫자를 입력해주세요");
+           var num=Number(input);
+           if(num ===0){
+               break;
+           }else{
+               sum = sum+num;
+               console.log("지금까지 입력된 숫자 :" + num);
+           }
+          
+       } 
+       console.log( "합 :" +sum + "입력한 숫자의 갯수" + iv)
+    
+    </script>
+</body>
+</html>
